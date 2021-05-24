@@ -144,8 +144,8 @@ export default function Contact(props) {
     });
 
     axios
-      .get(
-        "https://us-central1-material-ui-course-951d5.cloudfunctions.net/sendMail",
+      .post(
+        "http://localhost:3000/contactsave",
         {
           params: {
             name: name,
