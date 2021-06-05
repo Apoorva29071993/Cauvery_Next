@@ -9,6 +9,7 @@ const db = require('./db');
 
 const app = express();
 
+
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
@@ -35,7 +36,17 @@ app.post('/contactsave', (req , res) => {
    console.log("Message " + body.message);
 
    //Write the mongo code to save to database
-
+   db.getDb()
+      .db()
+      .collection('contactData').insertOne(body).then((result)=> {
+    console.log("Result : " + result);
+    res.status(200).send();
+    console.log("Data save successfull");
+   }).catch((error) => {
+     console.log("Error : " + error);
+     res.status(500).send();
+     console.log("Data save failed");
+   })
    //Write the mongo code to save to database End
    
    res.status(200).send();
@@ -47,5 +58,6 @@ db.initDb((err, db) => {
     console.log(err);
   } else {
     app.listen(3100);
+    console.log("Started db server at 3100");
   }
 });

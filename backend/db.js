@@ -2,7 +2,10 @@ const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 const mongoDbUrl =
-  'mongodb://127.0.0.1:27017/cauvery';
+  'mongodb://127.0.0.1:27017/cauveryEnterprises';
+
+const mongoDbAtlasUrl = 
+    'mongodb+srv://apoorva:apoorva@cauvery.h9o1t.mongodb.net/cauveryEnterprises?retryWrites=true&w=majority';  
 
 let _db;
 
