@@ -16,6 +16,9 @@ import Snackbar from "@material-ui/core/Snackbar";
 
 import ButtonArrow from "../src/ui/ButtonArrow";
 
+
+
+
 const useStyles = makeStyles(theme => ({
   background: {
     backgroundImage: `url("/assets/background.jpg")`,
@@ -142,19 +145,18 @@ export default function Contact(props) {
       category: "Message",
       action: "Sent Message"
     });
-
-    axios
-      .post(
-        "http://localhost:3000/contactsave",
-        {
-          params: {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message
-          }
-        }
-      )
+    console.log("Calling 1 ");
+    
+    console.log(name + email + phone + message);
+    axios({
+      url : 'http://localhost:3100/contactsave',
+      method : 'post' ,
+      data : {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+      }})
       .then(res => {
         setLoading(false);
         setOpen(false);
@@ -175,6 +177,7 @@ export default function Contact(props) {
           message: "Something went wrong, please try again!",
           backgroundColor: "#FF3232"
         });
+        console.log(err);
       });
   };
 

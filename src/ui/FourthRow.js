@@ -99,7 +99,7 @@ export default function FourthRow(props) {
                     <Grid item>
                         <Grid container direction="column">
                         <Grid item >
-                                <Typography variant="h2" align="flex-start"
+                                <Typography variant="h2" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "2.5rem" ,
                                     color : "white" ,
                                         }}
@@ -108,7 +108,7 @@ export default function FourthRow(props) {
                                 </Typography>
                         </Grid> 
                         <Grid item >
-                                <Typography variant="paragraph" align="flex-start"
+                                <Typography variant="body1" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "1.25rem" ,
                                     color : "#00203FFF" ,
                                         }}
@@ -129,7 +129,7 @@ export default function FourthRow(props) {
                     <Grid item>
                         <Grid container direction="column">
                         <Grid item >
-                                <Typography variant="h2" align="flex-start"
+                                <Typography variant="h2" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "2.5rem" ,
                                     color : "white" ,
                                         }}
@@ -138,7 +138,7 @@ export default function FourthRow(props) {
                                 </Typography>
                         </Grid> 
                         <Grid item >
-                                <Typography variant="paragraph" align="flex-start"
+                                <Typography variant="body1" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "1.25rem" ,
                                     color : "#00203FFF" ,
                                         }}
@@ -166,7 +166,7 @@ export default function FourthRow(props) {
                     <Grid item>
                         <Grid container direction="column">
                         <Grid item >
-                                <Typography variant="h2" align="flex-start"
+                                <Typography variant="h2" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "2.5rem" ,
                                     color : "white" ,
                                         }}
@@ -175,7 +175,7 @@ export default function FourthRow(props) {
                                 </Typography>
                         </Grid> 
                         <Grid item >
-                                <Typography variant="paragraph" align="flex-start"
+                                <Typography variant="body1" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "1.25rem" ,
                                     color : "#00203FFF" ,
                                         }}
@@ -197,7 +197,7 @@ export default function FourthRow(props) {
                     <Grid item>
                         <Grid container direction="column">
                         <Grid item >
-                                <Typography variant="h2" align="flex-start"
+                                <Typography variant="h2" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "2.5rem" ,
                                     color : "white" ,
                                         }}
@@ -206,7 +206,7 @@ export default function FourthRow(props) {
                                 </Typography>
                         </Grid> 
                         <Grid item >
-                                <Typography variant="paragraph" align="flex-start"
+                                <Typography variant="body1" align="left"
                                     style={{ fontSize: matchesSM ? "1.25rem" : "1.25rem" ,
                                     color : "#00203FFF" ,
                                         }}

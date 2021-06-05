@@ -19,10 +19,13 @@ import FourthRow from "../src/ui/FourthRow";
 
 import animationData from "../src/animations/landinganimation/data";
 
+
 import {
   LazyLoadImage,
   LazyLoadComponent
 } from "react-lazy-load-image-component";
+
+
 
 const useStyles = makeStyles(theme => ({
   animation: {

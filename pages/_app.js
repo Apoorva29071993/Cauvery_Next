@@ -43,6 +43,10 @@ export default class MyApp extends App {
       <React.Fragment>
         <Head>
           <title>My page</title>
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+          />
         </Head>
         <ThemeProvider theme={Theme}>
           <Header
